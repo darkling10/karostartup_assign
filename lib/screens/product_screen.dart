@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ProductScreen extends StatefulWidget {
+import '../utils/colors.dart';
+import '../widgets/appBar.dart';
+
+class ProductScreen extends StatelessWidget {
   const ProductScreen({Key? key}) : super(key: key);
 
   @override
-  State<ProductScreen> createState() => _ProductScreenState();
-}
-
-class _ProductScreenState extends State<ProductScreen> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: Text("Product App"),
-        ),
-      ),
+      appBar: buildAppBar(),
+      backgroundColor: primaryColor,
+      body: Text("Hiii"),
     );
   }
 }
