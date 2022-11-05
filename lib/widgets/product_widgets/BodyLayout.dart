@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:karostartup_assign/utils/colors.dart';
 import 'package:karostartup_assign/widgets/product_widgets/CategoryList.dart';
+import 'package:karostartup_assign/widgets/product_widgets/ProductCard.dart';
 
 import 'SearchBox.dart';
 
@@ -23,6 +24,26 @@ class _BodyLayoutState extends State<BodyLayout> {
           inputController: _searchInput,
         ),
         CategoryList(),
+        const SizedBox(
+          height: defaultPadding / 2,
+        ),
+        Expanded(
+          child: Stack(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(top: 70),
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(40),
+                    topRight: Radius.circular(40),
+                  ),
+                ),
+              ),
+              ProductCard(),
+            ],
+          ),
+        )
       ],
     );
   }
