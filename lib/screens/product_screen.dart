@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:karostartup_assign/widgets/product_widgets/BodyLayout.dart';
 
 import '../utils/colors.dart';
-import '../widgets/appBar.dart';
+import '../widgets/product_widgets/appBar.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({Key? key}) : super(key: key);

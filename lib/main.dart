@@ -4,7 +4,7 @@ import 'package:karostartup_assign/screens/product_screen.dart';
 import 'package:karostartup_assign/utils/colors.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -21,7 +21,6 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'Furniture app',
       theme: ThemeData(
-        // We set Poppins as our default font
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
         primaryColor: primaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,

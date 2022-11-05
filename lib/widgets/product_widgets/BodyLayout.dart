@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:karostartup_assign/screens/details_screen.dart';
 import 'package:karostartup_assign/utils/colors.dart';
 import 'package:karostartup_assign/widgets/product_widgets/CategoryList.dart';
 import 'package:karostartup_assign/widgets/product_widgets/ProductCard.dart';
@@ -51,8 +52,8 @@ class _BodyLayoutState extends State<BodyLayout> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Text(
-                          "product: products[index]",
+                        builder: (context) => DetailsScreen(
+                          product: products[index],
                         ),
                       ),
                     );

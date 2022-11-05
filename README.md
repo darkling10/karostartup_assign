@@ -1,16 +1,34 @@
-# karostartup_assign
+# Karostartup_assign
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+-----------------
 
-A few resources to get you started if this is your first Flutter project:
+This project is a my assignment for the position of Flutter Developer at KaroStartup.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## IMP note
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-------------------
+- I was not able to find API for the data, therefore I used static values which is present in [Products.dart](https://github.com/darkling10/karostartup_assign/blob/master/lib/resources/products.dart)
+- If we find an API for this, only this file is needed to be changed
+
+## App UI
+
+-----------------
+![Home Scrren](screenshots/ss_1.jpg)
+
+![Details Screen](screenshots/ss_2.jpg)
+
+![Details Screen](screenshots/ss_3.jpg)
+
+## Contact Details
+
+-------------
+
+[Email ID](mailto:pathan.abbas10@gmail.com)
+
+[LinkedIn ID](https://www.linkedin.com/in/abbas-pathan-96b98b218/)
+
+[Resume](https://drive.google.com/file/d/1QUOnfAP5LYmtHJDbN4i3aroXctK_8CJD/view?usp=sharing)
