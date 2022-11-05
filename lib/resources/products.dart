@@ -28,7 +28,7 @@ List<Product> products = [
     id: 3,
     price: 39,
     title: "Olive Wooden Chair",
-    image: "assets/images/Item_1.png",
+    image: "assets/images/item_2.png",
     description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
   ),

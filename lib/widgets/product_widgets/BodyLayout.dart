@@ -4,6 +4,7 @@ import 'package:karostartup_assign/utils/colors.dart';
 import 'package:karostartup_assign/widgets/product_widgets/CategoryList.dart';
 import 'package:karostartup_assign/widgets/product_widgets/ProductCard.dart';
 
+import '../../resources/products.dart';
 import 'SearchBox.dart';
 
 class BodyLayout extends StatefulWidget {
@@ -40,7 +41,24 @@ class _BodyLayoutState extends State<BodyLayout> {
                   ),
                 ),
               ),
-              ProductCard(),
+              ListView.builder(
+                // here we use our demo procuts list
+                itemCount: products.length,
+                itemBuilder: (context, index) => ProductCard(
+                  itemIndex: index,
+                  product: products[index],
+                  onPress: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Text(
+                          "product: products[index]",
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         )
